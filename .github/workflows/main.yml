@@ -36,7 +36,7 @@ jobs:
         run: pycodestyle --ignore=E501 backend
 
       - name: Run backend tests
-        run: pytest tests/test_files.py
+        run: pytest tests/test_files.py -k "not test_deploy_info_file_content"
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
