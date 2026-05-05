@@ -36,9 +36,7 @@ jobs:
         run: pycodestyle --ignore=E501 backend
 
       - name: Run backend tests
-        run: |
-          cd backend
-          pytest
+        run: pytest
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
