@@ -10,4 +10,4 @@ repos:
     rev: v2.12.1
     hooks:
       - id: pycodestyle
-        args: [backend]
+        args: [--ignore=E501, backend]

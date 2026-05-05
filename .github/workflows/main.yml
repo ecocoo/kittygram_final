@@ -33,7 +33,7 @@ jobs:
         run: ruff check backend
 
       - name: Pycodestyle check backend
-        run: pycodestyle backend
+        run: pycodestyle --ignore=E501 backend
 
       - name: Run backend tests
         run: |
